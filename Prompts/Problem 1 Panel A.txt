@@ -1,0 +1,9 @@
+Problem 1 Panel A 
+
+I am working on Homework 3 and need to keep a running log of the prompts I use while completing the assignment.
+
+Create a file named exactly AI_prompts.md in the main project folder.
+
+Set it up as a clean Markdown document titled "AI Prompts - Homework 3." I will use this file to record the prompts I type into Cursor for each problem as I work through the assignment one problem at a time.
+
+Create a section for Problem 1 - Panel A and record this prompt there. Do not add prompts that I have not actually used, and do not create or solve any later problems yet.

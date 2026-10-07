@@ -1,0 +1,10 @@
+Update AI_prompts.md so it follows the required format for Homework 3.
+
+The file needs one section for each problem I complete. Each problem section should contain:
+
+1. The problem number and title.
+2. At least one prompt that I actually typed into Cursor, written in my own words as much as possible.
+3. If I needed a follow-up prompt, include one sentence explaining what was lacking after the first prompt, followed by the follow-up prompt.
+4. Do not add extra proof or explanation. My code and JSON output files will serve as evidence that I completed the work.
+
+For now, only set up the section for Problem 1. Do not create sections for problems I have not worked on yet, and do not solve later problems.

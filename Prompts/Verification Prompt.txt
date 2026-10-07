@@ -1,0 +1,1 @@
+Review AI_prompts.md and make sure the Problem 1 section follows the required format: problem number and title, my actual prompt, and only if needed, a sentence explaining what was lacking followed by the follow-up prompt. Do not add extra proof text or work on another problem.

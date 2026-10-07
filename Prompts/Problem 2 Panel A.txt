@@ -1,0 +1,23 @@
+I need to complete Problem 2, Panel A of Homework 3 by building a structured product catalogue from the Campus Customs product images.
+
+First, inspect the current project structure and the files inside data/products. Then complete only this problem.
+
+Create build_catalogue.py. It must process every supported product image in data/products and use an approved OpenAI model through PortKey to create one structured catalogue entry per image. Use gpt-5.6-Luna unless the existing course setup requires another approved model. Read the PortKey credential from the port_key environment variable and never hardcode or print the key.
+
+Create or update models.py so it contains a Pydantic model for a catalogue entry. Include fields that will be useful later for matching Campus Customs merchandise in other photos. At minimum, include the source image filename, product type, detailed visual description, visible text or logo, primary colors, design features, and keywords. Use clear field descriptions and sensible defaults for information that may not be visible.
+
+Use the Pydantic catalogue-entry model as the structured output type for the AI image analysis. Make sure every valid product photo produces a validated catalogue entry.
+
+There are many product images, so do not process them with a plain sequential loop. Use asynchronous concurrency with asyncio, gather, and a semaphore or another clearly concurrent approach. Limit the number of simultaneous requests so the code is faster than sequential processing without overwhelming the API. Keep the results in a consistent order.
+
+The script must:
+- discover every supported image in data/products
+- support common image extensions such as .jpg, .jpeg, .png, and .webp
+- create the output directory if it does not exist
+- save the complete catalogue as valid JSON at output/catalogue.json
+- write UTF-8 JSON with readable indentation
+- report progress and identify failed files without exposing secrets
+- handle an individual image failure without losing all successful results
+- include a main entry point so I can run it from the terminal
+
+Do not work on later problems. After creating the files, explain exactly what you changed and give me the command to run build_catalogue.py. Also update AI_prompts.md under a section titled "Problem 2 - Build the Product Catalogue" by recording this exact prompt. Do not add extra proof text.
